@@ -3,10 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CE70DBE-6D0B-4D36-BB44-633506257241}|first_hw\\first_hw.vcxproj|C:\\Users\\User\\Downloads\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1CE70DBE-6D0B-4D36-BB44-633506257241}|first_hw\\first_hw.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\first_hw\\Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1CE70DBE-6D0B-4D36-BB44-633506257241}|first_hw\\first_hw.vcxproj|solutionrelative:first_hw\\Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CE70DBE-6D0B-4D36-BB44-633506257241}|first_hw\\first_hw.vcxproj|C:\\Users\\User\\Downloads\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{1CE70DBE-6D0B-4D36-BB44-633506257241}|first_hw\\first_hw.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\first_hw\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1CE70DBE-6D0B-4D36-BB44-633506257241}|first_hw\\first_hw.vcxproj|solutionrelative:first_hw\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Source.cpp",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Source.cpp",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\Source.cpp",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Source1.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\first_hw\\Source1.cpp",
+              "RelativeDocumentMoniker": "first_hw\\Source1.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\first_hw\\Source1.cpp",
+              "RelativeToolTip": "first_hw\\Source1.cpp",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwFsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-13T18:32:09.076Z",
+              "WhenOpened": "2025-02-15T06:26:55.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FileName.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\FileName.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\FileName.cpp",
-              "ToolTip": "C:\\Users\\User\\Downloads\\FileName.cpp",
-              "RelativeToolTip": "..\\..\\..\\Downloads\\FileName.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\first_hw\\Source.cpp",
+              "RelativeDocumentMoniker": "first_hw\\Source.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\first_hw\\first_hw\\Source.cpp",
+              "RelativeToolTip": "first_hw\\Source.cpp",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAGAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-13T18:32:07.501Z",
+              "WhenOpened": "2025-02-15T06:25:13.85Z",
               "EditorCaption": ""
             }
           ]
