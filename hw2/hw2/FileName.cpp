@@ -4,93 +4,102 @@ using namespace std;
 class Fraction {
 private:
     int numerator, denominator;
-    int findGreatestCommonDivisor(int a, int b) const {
-        // Приводим аргументы к положительным значениям
-        if (a < 0) a = -a;
-        if (b < 0) b = -b;
 
-        // Если один из аргументов равен нулю, возвращаем другой (избегая деления на 0)
-        if (a == 0) return b;
-        if (b == 0) return a;
-
-        while (a != b) {
-            if (a > b) {
-                a = a - b;
-            }
-            else {
-                b = b - a;
-            }
+    int findGreatestCommonDivisor(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-        return a;
+        return abs(a); // Возвращаем положительное значение
     }
+
     void reduce() {
-        int divisor = findGreatestCommonDivisor(numerator, denominator);
-        // Избегаем деления на 0
-        if (divisor != 0) {
-            numerator /= divisor;
-            denominator /= divisor;
+        if (denominator == 0) {
+            cout << "Ошибка: знаменатель не может быть равен нулю!" << endl;
+            exit(1);
         }
+        if (denominator < 0) {
+            numerator = -numerator;
+            denominator = -denominator;
+        }
+        int gcd = findGreatestCommonDivisor(numerator, denominator);
+        numerator /= gcd;
+        denominator /= gcd;
     }
+
 public:
-    Fraction(int aNumerator, int bDenominator) {
+   /* Fraction(int aNumerator, int aDenominator) : numerator(aNumerator), denominator(aDenominator) {
+        reduce(); // Сразу сокращаем дробь
+    }*/
+    Fraction(int aNumerator, int aDenominator) {
         numerator = aNumerator;
-        denominator = bDenominator;
-        reduce();
+        denominator = aDenominator;
+        reduce(); // Сразу сокращаем дробь
     }
-    void input(int aNumerator, int bDenominator) {
-        numerator = aNumerator;
-        denominator = bDenominator;
-        reduce();
-    }
+
     void print() const {
-        cout << "Результат: " << numerator << "/" << denominator << endl;
+        cout << numerator << "/" << denominator << endl;
     }
-    Fraction add(const Fraction& b) const {
-        Fraction result(numerator * b.denominator + b.numerator * denominator, denominator * b.denominator);
-        result.reduce();
-        return result;
+
+    Fraction add(const Fraction& b) {
+        int newNumerator = (numerator * b.denominator) + (b.numerator * denominator);
+        int newDenominator = denominator * b.denominator;
+        return Fraction(newNumerator, newDenominator);
     }
-    Fraction subtract(const Fraction& b) const {
-        Fraction result(numerator * b.denominator - b.numerator * denominator, denominator * b.denominator);
-        result.reduce();
-        return result;
+
+    Fraction subtract(const Fraction& b) {
+        int newNumerator = (numerator * b.denominator) - (b.numerator * denominator);
+        int newDenominator = denominator * b.denominator;
+        return Fraction(newNumerator, newDenominator);
     }
-    Fraction multiply(const Fraction& b) const {
-        Fraction result(numerator * b.numerator, denominator * b.denominator);
-        result.reduce();
-        return result;
+
+    Fraction multiply(const Fraction& b) {
+        int newNumerator = numerator * b.numerator;
+        int newDenominator = denominator * b.denominator;
+        return Fraction(newNumerator, newDenominator);
     }
-    Fraction divide(const Fraction& b) const {
-        Fraction result(numerator * b.denominator, denominator * b.numerator);
-        result.reduce();
-        return result;
+
+    Fraction divide(const Fraction& b) {
+        if (b.numerator == 0) {
+            cout << "Ошибка: деление на ноль!" << endl;
+            exit(1);
+        }
+        int newNumerator = numerator * b.denominator;
+        int newDenominator = denominator * b.numerator;
+        return Fraction(newNumerator, newDenominator);
     }
 };
 
 int main() {
-    Fraction a(1, 2), b(3, 4);
     cout << "Введите первую дробь (числитель и знаменатель): ";
     int aNumerator, aDenominator;
     cin >> aNumerator >> aDenominator;
-    a.input(aNumerator, aDenominator);
+
+    Fraction a(aNumerator, aDenominator);
 
     cout << "Введите вторую дробь (числитель и знаменатель): ";
     int bNumerator, bDenominator;
     cin >> bNumerator >> bDenominator;
-    b.input(bNumerator, bDenominator);
 
+    Fraction b(bNumerator, bDenominator);
+
+    // Сложение
     Fraction sum = a.add(b);
     cout << "Сумма: ";
     sum.print();
 
+    // Вычитание
     Fraction diff = a.subtract(b);
     cout << "Разность: ";
     diff.print();
 
+    // Умножение
     Fraction prod = a.multiply(b);
     cout << "Произведение: ";
     prod.print();
 
+    // Деление
     Fraction quot = a.divide(b);
     cout << "Частное: ";
     quot.print();

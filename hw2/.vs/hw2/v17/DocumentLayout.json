@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lopuw\\Desktop\\Object-oriented-programming\\hw2\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDD4981A-5854-4C4F-8506-C9736F6E3B7D}|hw2\\hw2.vcxproj|C:\\Users\\lopuw\\Desktop\\Object-oriented-programming\\hw2\\hw2\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DDD4981A-5854-4C4F-8506-C9736F6E3B7D}|hw2\\hw2.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw2\\hw2\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DDD4981A-5854-4C4F-8506-C9736F6E3B7D}|hw2\\hw2.vcxproj|solutionrelative:hw2\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,21 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FileName.cpp",
-              "DocumentMoniker": "C:\\Users\\lopuw\\Desktop\\Object-oriented-programming\\hw2\\hw2\\FileName.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw2\\hw2\\FileName.cpp",
               "RelativeDocumentMoniker": "hw2\\FileName.cpp",
-              "ToolTip": "C:\\Users\\lopuw\\Desktop\\Object-oriented-programming\\hw2\\hw2\\FileName.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw2\\hw2\\FileName.cpp",
               "RelativeToolTip": "hw2\\FileName.cpp",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-15T07:17:58.563Z",
               "EditorCaption": ""
