@@ -1,5 +1,2 @@
-﻿  FileName.cpp
-  Source.cpp
-  Создание кода...
-Source.obj : error LNK2005: main уже определен в FileName.obj
-C:\Users\User\Desktop\Object-oriented-programming\first_hw\x64\Debug\first_hw.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более
+﻿  Source.cpp
+  first_hw.vcxproj -> C:\Users\lopuw\Desktop\Object-oriented-programming\first_hw\x64\Debug\first_hw.exe
