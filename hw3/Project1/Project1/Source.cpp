@@ -39,7 +39,10 @@ public:
 
     void loadStudents(string filename) {
         ifstream file(filename);
-        if (!file) return;
+        if (!file) {
+            cerr << "Error: Unable to open students file: " << filename << endl;
+            exit(1);
+        }
         while (studentCount < MAX_STUDENTS && getline(file, students[studentCount].name)) {
             studentCount++;
         }
@@ -48,7 +51,10 @@ public:
 
     void loadSubjects(string filename) {
         ifstream file(filename);
-        if (!file) return;
+        if (!file) {
+            cerr << "Error: Unable to open subjects file: " << filename << endl;
+            exit(1);
+        }
         while (subjectCount < MAX_SUBJECTS && getline(file, subjects[subjectCount].name)) {
             subjectCount++;
         }
@@ -57,10 +63,16 @@ public:
 
     void loadGrades(string filename) {
         ifstream file(filename);
-        if (!file) return;
+        if (!file) {
+            cerr << "Error: Unable to open grades file: " << filename << endl;
+            exit(1);
+        }
         for (int i = 0; i < studentCount; i++) {
             for (int j = 0; j < subjectCount; j++) {
-                file >> students[i].grades[j];
+                if (!(file >> students[i].grades[j])) {
+                    cerr << "Error reading grades from file: " << filename << endl;
+                    exit(1);
+                }
             }
         }
         file.close();
