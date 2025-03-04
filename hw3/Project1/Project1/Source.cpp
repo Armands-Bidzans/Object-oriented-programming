@@ -4,8 +4,8 @@
 
 using namespace std;
 
-const int MAX_STUDENTS = 100;
-const int MAX_SUBJECTS = 20;
+const short MAX_STUDENTS = 100;
+const short MAX_SUBJECTS = 20;
 
 class Subject {
 public:
@@ -15,10 +15,10 @@ public:
 class Student {
 public:
     string name;
-    int grades[MAX_SUBJECTS];
+    short grades[MAX_SUBJECTS];
 
     Student() {
-        for (int i = 0; i < MAX_SUBJECTS; i++) {
+        for (short i = 0; i < MAX_SUBJECTS; i++) {
             grades[i] = 0;
         }
     }
@@ -29,8 +29,8 @@ public:
     string name;
     Student students[MAX_STUDENTS];
     Subject subjects[MAX_SUBJECTS];
-    int studentCount;
-    int subjectCount;
+    short studentCount;
+    short subjectCount;
 
     Group() {
         studentCount = 0;
@@ -67,8 +67,8 @@ public:
             cerr << "Error: Unable to open grades file: " << filename << endl;
             exit(1);
         }
-        for (int i = 0; i < studentCount; i++) {
-            for (int j = 0; j < subjectCount; j++) {
+        for (short i = 0; i < studentCount; i++) {
+            for (short j = 0; j < subjectCount; j++) {
                 if (!(file >> students[i].grades[j])) {
                     cerr << "Error reading grades from file: " << filename << endl;
                     exit(1);
@@ -80,51 +80,51 @@ public:
 
     void printReport() {
         cout << "\nStudent grades:" << endl;
-        for (int j = 0; j < subjectCount; j++) {
+        for (short j = 0; j < subjectCount; j++) {
             cout << subjects[j].name << " ";
         }
         cout << endl;
-        for (int i = 0; i < studentCount; i++) {
+        for (short i = 0; i < studentCount; i++) {
             cout << students[i].name << " ";
-            for (int j = 0; j < subjectCount; j++) {
+            for (short j = 0; j < subjectCount; j++) {
                 cout << students[i].grades[j] << " ";
             }
             cout << endl;
         }
 
         cout << "\nAverage grades of students:" << endl;
-        for (int i = 0; i < studentCount; i++) {
-            int sum = 0;
-            for (int j = 0; j < subjectCount; j++) {
+        for (short i = 0; i < studentCount; i++) {
+            short sum = 0;
+            for (short j = 0; j < subjectCount; j++) {
                 sum += students[i].grades[j];
             }
             cout << students[i].name << ": " << (sum / subjectCount) << endl;
         }
 
         cout << "\nAverage grades by subject:" << endl;
-        for (int j = 0; j < subjectCount; j++) {
-            int sum = 0;
-            for (int i = 0; i < studentCount; i++) {
+        for (short j = 0; j < subjectCount; j++) {
+            short sum = 0;
+            for (short i = 0; i < studentCount; i++) {
                 sum += students[i].grades[j];
             }
             cout << subjects[j].name << ": " << (sum / studentCount) << endl;
         }
 
         cout << "\nGroup average grade:" << endl;
-        int totalSum = 0;
-        int totalCount = studentCount * subjectCount;
-        for (int i = 0; i < studentCount; i++) {
-            for (int j = 0; j < subjectCount; j++) {
+        short totalSum = 0;
+        short totalCount = studentCount * subjectCount;
+        for (short i = 0; i < studentCount; i++) {
+            for (short j = 0; j < subjectCount; j++) {
                 totalSum += students[i].grades[j];
             }
         }
         cout << "Overall average grade: " << (totalSum / totalCount) << endl;
 
         cout << "\nMaximum and minimum grades:" << endl;
-        for (int j = 0; j < subjectCount; j++) {
-            int maxGrade = 0, minGrade = 10;
+        for (short j = 0; j < subjectCount; j++) {
+            short maxGrade = 0, minGrade = 10;
             string maxStudent, minStudent;
-            for (int i = 0; i < studentCount; i++) {
+            for (short i = 0; i < studentCount; i++) {
                 if (students[i].grades[j] > maxGrade) {
                     maxGrade = students[i].grades[j];
                     maxStudent = students[i].name;

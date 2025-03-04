@@ -3,11 +3,11 @@ using namespace std;
 
 class Fraction {
 private:
-    int numerator, denominator;
+    short numerator, denominator;
 
-    int findGreatestCommonDivisor(int a, int b) {
+    short findGreatestCommonDivisor(short a, short b) {
         while (b != 0) {
-            int temp = b;
+            short temp = b;
             b = a % b;
             a = temp;
         }
@@ -23,16 +23,13 @@ private:
             numerator = -numerator;
             denominator = -denominator;
         }
-        int gcd = findGreatestCommonDivisor(numerator, denominator);
+        short gcd = findGreatestCommonDivisor(numerator, denominator);
         numerator /= gcd;
         denominator /= gcd;
     }
 
 public:
-   /* Fraction(int aNumerator, int aDenominator) : numerator(aNumerator), denominator(aDenominator) {
-        reduce(); // Сразу сокращаем дробь
-    }*/
-    Fraction(int aNumerator, int aDenominator) {
+    Fraction(short aNumerator, short aDenominator) {
         numerator = aNumerator;
         denominator = aDenominator;
         reduce(); // Сразу сокращаем дробь
@@ -43,20 +40,20 @@ public:
     }
 
     Fraction add(const Fraction& b) {
-        int newNumerator = (numerator * b.denominator) + (b.numerator * denominator);
-        int newDenominator = denominator * b.denominator;
+        short newNumerator = (numerator * b.denominator) + (b.numerator * denominator);
+        short newDenominator = denominator * b.denominator;
         return Fraction(newNumerator, newDenominator);
     }
 
     Fraction subtract(const Fraction& b) {
-        int newNumerator = (numerator * b.denominator) - (b.numerator * denominator);
-        int newDenominator = denominator * b.denominator;
+        short newNumerator = (numerator * b.denominator) - (b.numerator * denominator);
+        short newDenominator = denominator * b.denominator;
         return Fraction(newNumerator, newDenominator);
     }
 
     Fraction multiply(const Fraction& b) {
-        int newNumerator = numerator * b.numerator;
-        int newDenominator = denominator * b.denominator;
+        short newNumerator = numerator * b.numerator;
+        short newDenominator = denominator * b.denominator;
         return Fraction(newNumerator, newDenominator);
     }
 
@@ -65,21 +62,21 @@ public:
             cout << "Ошибка: деление на ноль!" << endl;
             exit(1);
         }
-        int newNumerator = numerator * b.denominator;
-        int newDenominator = denominator * b.numerator;
+        short newNumerator = numerator * b.denominator;
+        short newDenominator = denominator * b.numerator;
         return Fraction(newNumerator, newDenominator);
     }
 };
 
 int main() {
     cout << "Введите первую дробь (числитель и знаменатель): ";
-    int aNumerator, aDenominator;
+    short aNumerator, aDenominator;
     cin >> aNumerator >> aDenominator;
 
     Fraction a(aNumerator, aDenominator);
 
     cout << "Введите вторую дробь (числитель и знаменатель): ";
-    int bNumerator, bDenominator;
+    short bNumerator, bDenominator;
     cin >> bNumerator >> bDenominator;
 
     Fraction b(bNumerator, bDenominator);

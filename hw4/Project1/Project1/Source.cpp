@@ -5,12 +5,12 @@ class Elevator {
 public:
     bool turnOnOff;
     bool workDontwork;
-    int minFloor;
-    int maxFloor;
-    int currentFloor;
-    int destinationFloor;
+    short minFloor;         // изменено int → short
+    short maxFloor;         // изменено int → short
+    short currentFloor;     // изменено int → short
+    short destinationFloor; // изменено int → short
 
-    Elevator(int minF, int maxF) {
+    Elevator(short minF, short maxF) { // изменено параметры int → short
         turnOnOff = false;
         workDontwork = false;
         minFloor = minF;
@@ -29,18 +29,18 @@ public:
         }
     }
 
-    void callElevator(int floor) {
+    void callElevator(short floor) { // изменено параметр int → short
         if (workDontwork && floor >= minFloor && floor <= maxFloor) {
             destinationFloor = floor;
             currentFloor = destinationFloor;
         }
     }
 
-    int getCurrentFloor() {
+    short getCurrentFloor() {    // изменено int → short
         return currentFloor;
     }
 
-    int getDestinationFloor() {
+    short getDestinationFloor() { // изменено int → short
         return destinationFloor;
     }
 };
@@ -107,7 +107,7 @@ int main() {
                 cout << "Лифт выключён." << endl;
             }
             else if (choice == '2') {
-                int target;
+                short target; // изменено int → short
                 cout << "Введите номер этажа, куда хотите поехать: ";
                 cin >> target;
                 if (target >= lift.minFloor && target <= lift.maxFloor) {
