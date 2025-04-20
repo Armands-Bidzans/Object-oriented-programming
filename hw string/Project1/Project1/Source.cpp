@@ -8,8 +8,8 @@ private:
 
 public:
     String() {
-        size = 80;             // инициализируем размер
-        str = new char[size];  // выделяем память под строку
+        size = 80;
+        str = new char[size];
     }
     String(int s) {
         size = s;
@@ -22,6 +22,7 @@ public:
         for (short i = 0; i < size; ++i)
             str[i] = other.str[i];
     }
+    // пользовательский конструктор класса String, принимающий const char* и выполняющий глубокое копирование (deep copy) строки.
     String(const char* s) {
         size = 0;
         while (s[size]) size++;
