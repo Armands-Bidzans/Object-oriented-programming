@@ -4,7 +4,7 @@ using namespace std;
 class String {
 private:
     char* str;
-    int size;
+    short size;
 
 public:
     String() {
@@ -19,14 +19,14 @@ public:
     String(const String& other) {
         size = other.size;
         str = new char[size];
-        for (int i = 0; i < size; ++i)
+        for (short i = 0; i < size; ++i)
             str[i] = other.str[i];
     }
     String(const char* s) {
         size = 0;
         while (s[size]) size++;
         str = new char[size + 1];
-        for (int i = 0; i <= size; i++)
+        for (short i = 0; i <= size; i++)
             str[i] = s[i];
     }
 

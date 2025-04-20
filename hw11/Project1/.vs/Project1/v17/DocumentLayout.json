@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw11\\Project1\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming1\\hw11\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C6CAF0B-5CD9-4201-9D88-872C3D79DE3D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw11\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{1C6CAF0B-5CD9-4201-9D88-872C3D79DE3D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming1\\hw11\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1C6CAF0B-5CD9-4201-9D88-872C3D79DE3D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,9 +20,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw11\\Project1\\Project1\\Source.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming1\\hw11\\Project1\\Project1\\Source.cpp",
               "RelativeDocumentMoniker": "Project1\\Source.cpp",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw11\\Project1\\Project1\\Source.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming1\\hw11\\Project1\\Project1\\Source.cpp",
               "RelativeToolTip": "Project1\\Source.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAIAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
