@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|solutionrelative:Project1\\ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|solutionrelative:Project1\\ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|solutionrelative:Project1\\ex4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|solutionrelative:Project1\\ex3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|solutionrelative:Project1\\ex2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B3E89BC2-D6CE-4B0F-BECE-5E0E21BFA872}|Project1\\Project1.vcxproj|solutionrelative:Project1\\ex1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ex1.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex1.cpp",
               "RelativeDocumentMoniker": "Project1\\ex1.cpp",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex1.cpp",
               "RelativeToolTip": "Project1\\ex1.cpp",
-              "ViewState": "AQIAABIAAAAAAAAAAAAwwDcAAAABAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAwwDcAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T07:37:51.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ex4.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex4.cpp",
               "RelativeDocumentMoniker": "Project1\\ex4.cpp",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex4.cpp",
               "RelativeToolTip": "Project1\\ex4.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T07:31:59.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ex3.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex3.cpp",
               "RelativeDocumentMoniker": "Project1\\ex3.cpp",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex3.cpp",
               "RelativeToolTip": "Project1\\ex3.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T07:29:11.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ex2.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex2.cpp",
               "RelativeDocumentMoniker": "Project1\\ex2.cpp",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\linear_eq_math\\Project1\\Project1\\ex2.cpp",
               "RelativeToolTip": "Project1\\ex2.cpp",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAwwH0AAAAAAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAwwH0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T06:57:48.495Z",
               "EditorCaption": ""
