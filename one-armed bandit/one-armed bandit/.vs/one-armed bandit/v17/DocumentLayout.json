@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\",
+  "WorkspaceRootPath": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21954ACA-E17E-4171-BAD6-21FBDEBE23DC}|one-armed bandit\\one-armed bandit.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\one-armed bandit\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{21954ACA-E17E-4171-BAD6-21FBDEBE23DC}|one-armed bandit\\one-armed bandit.vcxproj|C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\one-armed bandit\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{21954ACA-E17E-4171-BAD6-21FBDEBE23DC}|one-armed bandit\\one-armed bandit.vcxproj|solutionrelative:one-armed bandit\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\one-armed bandit\\Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\one-armed bandit\\Source.cpp",
               "RelativeDocumentMoniker": "one-armed bandit\\Source.cpp",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\one-armed bandit\\Source.cpp",
-              "RelativeToolTip": "one-armed bandit\\Source.cpp",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAFEAAAAAAAAA",
+              "ToolTip": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\one-armed bandit\\one-armed bandit\\one-armed bandit\\Source.cpp*",
+              "RelativeToolTip": "one-armed bandit\\Source.cpp*",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-02T07:19:23.629Z",
               "EditorCaption": ""
