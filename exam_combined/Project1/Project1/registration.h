@@ -47,15 +47,18 @@ inline bool loginUser(string& currentUser) {
         return false;
     }
     string line;
-    while (getline(file, line)) {
+    while (getline(file, line)) {  // Читаем файл построчно в строку line
         bool sep = false;
-        string u = "", p = "";
-        for (char c : line) {
-            if (c == ':' && !sep) { sep = true; continue; }
-            if (!sep) u += c;
-            else p += c;
+        string u = "", p = "";      // u — имя пользователя, p — пароль
+        for (char c : line) {       // Перебираем каждый символ строки
+            if (c == ':' && !sep) { // Первый двоеточие — разделитель логина и пароля
+                sep = true;         // Отметили, что разделитель встретился
+                continue;
+            }
+            if (!sep) u += c;       // Пока не встретили ':', добавляем символ в u (логин)
+            else p += c;            // После ':' — в p (пароль)
         }
-        if (u == user && p == pass) {
+        if (u == user && p == pass) {   // Сравниваем введённые с файла
             currentUser = user;
             cout << "Вход успешен. Привет, " << user << "!\n";
             return true;
@@ -63,5 +66,6 @@ inline bool loginUser(string& currentUser) {
     }
     cout << "Неверный логин или пароль\n";
     return false;
+
 }
 #endif // REGISTRATION_H

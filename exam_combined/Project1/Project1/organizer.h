@@ -14,6 +14,8 @@ static const int MAX_TASKS = 100;
 struct Task {
     int id;
     string desc;
+    string dueDate;     // срок выполнения задачи в формате YYYY-MM-DD
+    int priority;       // приоритет задачи (1 — низкий, 2 — средний, 3 — высокий)
 };
 
 class Organizer {
@@ -24,31 +26,14 @@ private:
     // Загрузка задач из файла
     void load() {
         count = 0;
-        ifstream fin(TASKS_FILE);
+        ifstream fin(TASKS_FILE);  // Открываем файл для чтения
         if (!fin) return;
-        char line[256];
-        while (count < MAX_TASKS && fin.getline(line, 256)) {
-            char num[16] = "";
-            string text = "";
-            bool sep = false;
-            int ni = 0;
-            for (int i = 0; line[i] != '\0'; i++) {
-                if (!sep) {
-                    if (line[i] == ':') sep = true;
-                    else if (line[i] >= '0' && line[i] <= '9') num[ni++] = line[i];
-                }
-                else {
-                    text += line[i];
-                }
-            }
-            if (ni == 0) continue;
-            num[ni] = '\0';
-            int nid = 0;
-            for (int i = 0; num[i] != '\0'; i++) {
-                nid = nid * 10 + (num[i] - '0');
-            }
-            tasks[count].id = nid;
-            tasks[count].desc = text;
+        while (count < MAX_TASKS && fin >> tasks[count].id) {
+            fin.ignore();  // Пропускаем лишний символ (например, \n)
+            getline(fin, tasks[count].desc, '|');
+            getline(fin, tasks[count].dueDate, '|');  // Читаем дату до первого вхождения символа '|'
+            fin >> tasks[count].priority;  // Читаем приоритет
+            fin.ignore();  // Пропускаем лишний символ (например, \n)
             count++;
         }
     }
@@ -61,7 +46,7 @@ private:
             return;
         }
         for (int i = 0; i < count; i++) {
-            fout << tasks[i].id << ":" << tasks[i].desc << "\n";
+            fout << tasks[i].id << ":" << tasks[i].desc << "|" << tasks[i].dueDate << "|" << tasks[i].priority << "\n";
         }
     }
 
@@ -79,7 +64,7 @@ public:
         load();
     }
 
-    void addTask(const string& desc) {
+    void addTask(const string& desc, const string& dueDate, int priority) {
         if (count >= MAX_TASKS) {
             cout << "Достигнут максимум задач\n";
             return;
@@ -87,6 +72,8 @@ public:
         Task t;
         t.id = nextId();
         t.desc = desc;
+        t.dueDate = dueDate;
+        t.priority = priority;
         tasks[count++] = t;
         save();
         cout << "Добавлена задача [" << t.id << "]\n";
@@ -109,7 +96,7 @@ public:
         cout << "Удалена задача [" << id << "]\n";
     }
 
-    void editTask(int id, const string& newDesc) {
+    void editTask(int id, const string& newDesc, const string& newDueDate, int newPriority) {
         int pos = -1;
         for (int i = 0; i < count; i++) {
             if (tasks[i].id == id) { pos = i; break; }
@@ -119,6 +106,8 @@ public:
             return;
         }
         tasks[pos].desc = newDesc;
+        tasks[pos].dueDate = newDueDate;
+        tasks[pos].priority = newPriority;
         save();
         cout << "Изменена задача [" << id << "]\n";
     }
@@ -130,46 +119,106 @@ public:
         }
         cout << "Текущие задачи:\n";
         for (int i = 0; i < count; i++) {
-            cout << "[" << tasks[i].id << "] " << tasks[i].desc << "\n";
+            cout << "[" << tasks[i].id << "] " << tasks[i].desc;
+            cout << " (срок: " << tasks[i].dueDate;
+            cout << ", приоритет: " << tasks[i].priority << ")\n";
         }
     }
 
     void run() {
-        string choice;
         while (true) {
-            cout << "\nОрганайзер:\n"
-                << "1 - Показать задачи\n"
-                << "2 - Добавить задачу\n"
-                << "3 - Редактировать задачу\n"
-                << "4 - Удалить задачу\n"
-                << "5 - Назад\n"
-                << "Выбор: ";
+            cout << "\nОрганайзер:\n";
+            cout << "1 - Показать задачи\n";
+            cout << "2 - Добавить задачу\n";
+            cout << "3 - Редактировать задачу\n";
+            cout << "4 - Удалить задачу\n";
+            cout << "5 - Назад\n";
+            cout << "Выбор: ";
+
+            string choice;
             getline(cin, choice);
-            if (choice == "1") listTasks();
+
+            if (choice == "1") {
+                listTasks();
+            }
             else if (choice == "2") {
                 cout << "Описание: ";
-                string d; getline(cin, d);
-                addTask(d);
+                string desc;
+                getline(cin, desc);
+
+                cout << "Срок (YYYY-MM-DD): ";
+                string dueDate;
+                getline(cin, dueDate);
+
+                cout << "Приоритет (1-3): ";
+                string pstr;
+                getline(cin, pstr);
+
+                int prLen = 0;
+                while (pstr[prLen] != '\0') prLen++;
+
+                int priority = 2;
+                if (prLen > 0 && pstr[0] >= '1' && pstr[0] <= '3') {
+                    priority = pstr[0] - '0';
+                }
+
+                addTask(desc, dueDate, priority);
             }
             else if (choice == "3") {
-                cout << "ID задачи: "; string s; getline(cin, s);
+                cout << "ID задачи: ";
+                string s;
+                getline(cin, s);
+
                 int id = 0;
                 for (int i = 0; s[i] != '\0'; i++) {
-                    if (s[i] >= '0' && s[i] <= '9') id = id * 10 + (s[i] - '0');
-                }
-                cout << "Новое описание: "; string d; getline(cin, d);
-                editTask(id, d);
+                    if (s[i] >= '0' && s[i] <= '9') {
+                        id = id * 10 + (s[i] - '0');
+                    }
+                } //  если символ — цифра, прибавляет её к числу id.
+
+                cout << "Новое описание: ";
+                string newDesc;
+                getline(cin, newDesc);
+
+                cout << "Новая дата: ";
+                string newDueDate;
+                getline(cin, newDueDate);
+
+                cout << "Новый приоритет (1-3): ";
+                string prStr;
+                getline(cin, prStr);
+
+                int len = 0;
+                while (prStr[len] != '\0') len++;
+
+                int newPriority = 2;
+                if (len > 0 && prStr[0] >= '1' && prStr[0] <= '3') {
+                    newPriority = prStr[0] - '0';
+                } // Если prStr не пустая и начинается с '1', '2' или '3',
+                //то newPriority получает это значение (как число). Иначе остаётся 2.
+
+                editTask(id, newDesc, newDueDate, newPriority);
             }
             else if (choice == "4") {
-                cout << "ID задачи: "; string s; getline(cin, s);
+                cout << "ID задачи: ";
+                string s;
+                getline(cin, s);
+
                 int id = 0;
                 for (int i = 0; s[i] != '\0'; i++) {
-                    if (s[i] >= '0' && s[i] <= '9') id = id * 10 + (s[i] - '0');
+                    if (s[i] >= '0' && s[i] <= '9') {
+                        id = id * 10 + (s[i] - '0');
+                    }
                 }
+
                 deleteTask(id);
             }
-            else if (choice == "5") break;
-            else cout << "Неверный выбор\n";
+            else if (choice == "5") {
+                break;
+            }
+            else {
+                cout << "Неверный выбор\n";
+            }
         }
     }
 };
