@@ -1,4 +1,3 @@
-// organizer.h
 #ifndef ORGANIZER_H
 #define ORGANIZER_H
 
@@ -10,6 +9,14 @@ using namespace std;
 
 static const string TASKS_FILE = "tasks.txt";
 static const int MAX_TASKS = 100;
+
+// Цвета ANSI
+#define DARKGREEN "[2;32m"    // тёмно-зелёный
+#define GREEN     "\033[92m"    // ярко-зелёный (для добавления)
+#define RED       "\033[31m"
+#define YELLOW    "\033[33m"
+#define GRAY      "\033[90m"
+#define RESET     "\033[0m"
 
 struct Task {
     int id;
@@ -42,7 +49,7 @@ private:
     void save() {
         ofstream fout(TASKS_FILE);
         if (!fout) {
-            cout << "Ошибка: не могу сохранить задачи\n";
+            cout << RED << "Ошибка: не могу сохранить задачи" << RESET << '\n';
             return;
         }
         for (int i = 0; i < count; i++) {
@@ -66,7 +73,7 @@ public:
 
     void addTask(const string& desc, const string& dueDate, int priority) {
         if (count >= MAX_TASKS) {
-            cout << "Достигнут максимум задач\n";
+            cout << RED << "Достигнут максимум задач" << RESET << '\n';
             return;
         }
         Task t;
@@ -76,7 +83,7 @@ public:
         t.priority = priority;
         tasks[count++] = t;
         save();
-        cout << "Добавлена задача [" << t.id << "]\n";
+        cout << GREEN << "Добавлена задача [" << t.id << "]" << RESET << '\n';
     }
 
     void deleteTask(int id) {
@@ -85,7 +92,7 @@ public:
             if (tasks[i].id == id) { pos = i; break; }
         }
         if (pos == -1) {
-            cout << "Задача не найдена\n";
+            cout << RED << "Задача не найдена" << RESET << '\n';
             return;
         }
         for (int i = pos; i + 1 < count; i++) {
@@ -93,7 +100,7 @@ public:
         }
         count--;
         save();
-        cout << "Удалена задача [" << id << "]\n";
+        cout << RED << "Удалена задача [" << id << "]" << RESET << '\n';
     }
 
     void editTask(int id, const string& newDesc, const string& newDueDate, int newPriority) {
@@ -102,37 +109,37 @@ public:
             if (tasks[i].id == id) { pos = i; break; }
         }
         if (pos == -1) {
-            cout << "Задача не найдена\n";
+            cout << YELLOW << "Задача не найдена" << RESET << '\n';
             return;
         }
         tasks[pos].desc = newDesc;
         tasks[pos].dueDate = newDueDate;
         tasks[pos].priority = newPriority;
         save();
-        cout << "Изменена задача [" << id << "]\n";
+        cout << YELLOW << "Изменена задача [" << id << "]" << RESET << '\n';
     }
 
     void listTasks() {
         if (count == 0) {
-            cout << "Список задач пуст\n";
+            cout << "Список задач пуст" << '\n';
             return;
         }
-        cout << "Текущие задачи:\n";
+        cout << "Текущие задачи:" << '\n';
         for (int i = 0; i < count; i++) {
             cout << "[" << tasks[i].id << "] " << tasks[i].desc;
             cout << " (срок: " << tasks[i].dueDate;
-            cout << ", приоритет: " << tasks[i].priority << ")\n";
+            cout << ", приоритет: " << tasks[i].priority << ")" << '\n';
         }
     }
 
     void run() {
         while (true) {
             cout << "\nОрганайзер:\n";
-            cout << "1 - Показать задачи\n";
-            cout << "2 - Добавить задачу\n";
-            cout << "3 - Редактировать задачу\n";
-            cout << "4 - Удалить задачу\n";
-            cout << "5 - Назад\n";
+            cout << DARKGREEN << "1 - Показать задачи\n" << RESET;
+            cout << GREEN << "2 - Добавить задачу\n" << RESET;
+            cout << YELLOW << "3 - Редактировать задачу\n" << RESET;
+            cout << RED << "4 - Удалить задачу\n" << RESET;
+            cout << GRAY << "5 - Назад\n" << RESET;
             cout << "Выбор: ";
 
             string choice;

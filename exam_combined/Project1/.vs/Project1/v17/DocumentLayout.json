@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\registration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +30,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Header.h",
-              "DocumentMoniker": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h",
-              "RelativeDocumentMoniker": "Project1\\Header.h",
-              "ToolTip": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h",
-              "RelativeToolTip": "Project1\\Header.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-18T06:30:52.839Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "organizer.h",
-              "DocumentMoniker": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h",
-              "RelativeDocumentMoniker": "Project1\\organizer.h",
-              "ToolTip": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h",
-              "RelativeToolTip": "Project1\\organizer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Title": "Header.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h",
+              "RelativeDocumentMoniker": "Project1\\Header.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h",
+              "RelativeToolTip": "Project1\\Header.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-17T16:49:04.07Z",
+              "WhenOpened": "2025-06-18T06:30:52.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "organizer.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h",
+              "RelativeDocumentMoniker": "Project1\\organizer.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h",
+              "RelativeToolTip": "Project1\\organizer.h",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-17T16:49:04.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "poker.h",
-              "DocumentMoniker": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h",
               "RelativeDocumentMoniker": "Project1\\poker.h",
-              "ToolTip": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h",
               "RelativeToolTip": "Project1\\poker.h",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAGYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-20T12:52:01.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T12:52:01.22Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "registration.h",
-              "DocumentMoniker": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h",
               "RelativeDocumentMoniker": "Project1\\registration.h",
-              "ToolTip": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h",
               "RelativeToolTip": "Project1\\registration.h",
-              "ViewState": "AgIAADQAAAAAAAAAAAAIwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-16T07:13:33.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T07:13:33.256Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp",
               "RelativeDocumentMoniker": "Project1\\Source.cpp",
-              "ToolTip": "C:\\Users\\Drey\\Desktop\\Armands\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp",
               "RelativeToolTip": "Project1\\Source.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAAAnAAAAAAAAAA==",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAAAEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-16T06:38:18.997Z",
               "EditorCaption": ""

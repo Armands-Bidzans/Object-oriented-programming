@@ -6,15 +6,15 @@
 #include <string>
 using namespace std;
 
-static const string USERS_FILE = "users.txt";  // файл в текущей директории
+static const string USERS_FILE = "users.txt";
+const string RED = "\033[31m";
+const string GREEN = "\033[32m";
+const string RESET = "\033[0m";
 
-// Создает файл пользователей, если его нет
 inline void initUsersFile() {
     ofstream f(USERS_FILE, ios::app);
-    // при открытии в режиме append файл создается автоматически
 }
 
-// Регистрирует нового пользователя, возвращает true при успехе
 inline bool registerUser() {
     cout << "Новый логин: ";
     string user;
@@ -22,17 +22,22 @@ inline bool registerUser() {
     cout << "Новый пароль: ";
     string pass;
     getline(cin, pass);
+
+    if (pass == "") {
+        cout << RED << "Ошибка: пароль не может быть пустым" << RESET << '\n';
+        return false;
+    }
+
     ofstream file(USERS_FILE, ios::app);
     if (!file) {
-        cout << "Ошибка: не удалось создать или открыть файл пользователей\n";
+        cout << RED << "Ошибка: не удалось создать или открыть файл пользователей" << RESET << '\n';
         return false;
     }
     file << user << ':' << pass << '\n';
-    cout << "Регистрация выполнена!\n";
+    cout << GREEN << "Регистрация выполнена!" << RESET << '\n';
     return true;
 }
 
-// Пытается выполнить вход, записывает имя в currentUser, возвращает true при успешном входе
 inline bool loginUser(string& currentUser) {
     cout << "Логин: ";
     string user;
@@ -43,29 +48,30 @@ inline bool loginUser(string& currentUser) {
 
     ifstream file(USERS_FILE);
     if (!file) {
-        cout << "Ошибка: файл пользователей не найден, сначала зарегистрируйтесь\n";
+        cout << RED << "Ошибка: файл пользователей не найден, сначала зарегистрируйтесь" << RESET << '\n';
         return false;
     }
     string line;
-    while (getline(file, line)) {  // Читаем файл построчно в строку line
+    while (getline(file, line)) {
         bool sep = false;
-        string u = "", p = "";      // u — имя пользователя, p — пароль
-        for (char c : line) {       // Перебираем каждый символ строки
-            if (c == ':' && !sep) { // Первый двоеточие — разделитель логина и пароля
-                sep = true;         // Отметили, что разделитель встретился
+        string u = "", p = "";
+        for (char c : line) {
+            if (c == ':' && !sep) {
+                sep = true;
                 continue;
             }
-            if (!sep) u += c;       // Пока не встретили ':', добавляем символ в u (логин)
-            else p += c;            // После ':' — в p (пароль)
+            if (!sep) u += c;
+            else p += c;
         }
-        if (u == user && p == pass) {   // Сравниваем введённые с файла
+        if (u == user && p == pass) {
             currentUser = user;
-            cout << "Вход успешен. Привет, " << user << "!\n";
+            cout << GREEN << "Вход успешен. Привет, " << user << "!" << RESET << '\n';
+            cin.get(); // задержка
             return true;
         }
     }
-    cout << "Неверный логин или пароль\n";
+    cout << RED << "Неверный логин или пароль" << RESET << '\n';
     return false;
-
 }
+
 #endif // REGISTRATION_H

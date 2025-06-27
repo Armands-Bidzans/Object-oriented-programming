@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C51379C1-DFAD-4614-8895-0D8C7147961D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C51379C1-DFAD-4614-8895-0D8C7147961D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C51379C1-DFAD-4614-8895-0D8C7147961D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\Project1\\Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C51379C1-DFAD-4614-8895-0D8C7147961D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\Project1\\Source.cpp",
+              "RelativeDocumentMoniker": "Project1\\Source.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\Project1\\Source.cpp",
+              "RelativeToolTip": "Project1\\Source.cpp",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAwGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-25T06:35:36.178Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source1.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\Project1\\Source1.cpp",
+              "RelativeDocumentMoniker": "Project1\\Source1.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\hw_final\\Project1\\Project1\\Source1.cpp",
+              "RelativeToolTip": "Project1\\Source1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-25T07:19:10.905Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
