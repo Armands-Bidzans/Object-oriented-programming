@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\organizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\registration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\poker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\sudoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2674D846-8BB3-4CF0-9BA0-1511A44CD89D}|Project1\\Project1.vcxproj|solutionrelative:Project1\\sudoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Project1\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "sudoku.h",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\sudoku.h",
+              "RelativeDocumentMoniker": "Project1\\sudoku.h",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\sudoku.h",
+              "RelativeToolTip": "Project1\\sudoku.h",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAJEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-29T07:52:36.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Header.h",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Header.h",
               "RelativeDocumentMoniker": "Project1\\Header.h",
@@ -42,32 +59,33 @@
               "RelativeToolTip": "Project1\\Header.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-18T06:30:52.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T06:30:52.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "organizer.h",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h",
               "RelativeDocumentMoniker": "Project1\\organizer.h",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\organizer.h",
               "RelativeToolTip": "Project1\\organizer.h",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwA0AAAAvAAAA",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAAABUAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-17T16:49:04.07Z"
+              "WhenOpened": "2025-06-17T16:49:04.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "poker.h",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h",
               "RelativeDocumentMoniker": "Project1\\poker.h",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\poker.h",
               "RelativeToolTip": "Project1\\poker.h",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGYAAAA1AAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-20T12:52:01.22Z"
+              "WhenOpened": "2025-06-20T12:52:01.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -77,19 +95,20 @@
               "RelativeDocumentMoniker": "Project1\\registration.h",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\registration.h",
               "RelativeToolTip": "Project1\\registration.h",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEgAAAAoAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAKYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-16T07:13:33.256Z"
+              "WhenOpened": "2025-06-16T07:13:33.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp",
               "RelativeDocumentMoniker": "Project1\\Source.cpp",
               "ToolTip": "C:\\Users\\User\\Desktop\\Object-oriented-programming\\exam_combined\\Project1\\Project1\\Source.cpp",
               "RelativeToolTip": "Project1\\Source.cpp",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAAAEAAAAIAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAA4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-16T06:38:18.997Z",
               "EditorCaption": ""
